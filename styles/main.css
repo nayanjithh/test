@@ -1,4 +1,4 @@
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css
 
 body, html {
     scrollbar-face-color: ThreeDFace !important;
@@ -264,7 +264,7 @@ table {
 {
     font-size: 16px;
     letter-spacing: 1px;
-    border:2px solid white;
+    border:2px solid black;
     padding: 8px 18px;
     border-radius: 50px;
 }
@@ -1087,7 +1087,8 @@ table {
 }
 
 .Header.is-sticky {
-    background: #000
+    background: white;
+    border-bottom: 1px solid black;
 }
 
 .Header-logo {
@@ -1141,7 +1142,7 @@ table {
 
 .Section--gradient,
 .Section--gradientFromBlack {
-    background: url(../images/5960.png) center top/cover no-repeat #000;
+    background: url(../images/5960.png) center top/cover no-repeat #000000;
 }
 
 .Section--gradient {
@@ -1160,6 +1161,7 @@ table {
 }
 
 .Section--paper {
+    border-top: 3px solid black;
     background: #fff;
     color: #3d3d3d
 }
@@ -1369,6 +1371,7 @@ table {
 
 .Nav-item {
     display: block;
+    color: #000;
     font-size: 18px;
     line-height: 46px;
     opacity: .8;
@@ -1835,12 +1838,14 @@ a:hover{
 
 #cards .col-lg-4.col-md-4.col-sm-12 
 {
+    display: grid;
+    grid-template-rows: 200px auto auto;
+    justify-items: center;
     width: 24%;
-    height: 300px;
-    margin: 0 4.6%;
-    background: url(../images/5960.png) center top/cover no-repeat #000;
-    border: none;
-    border-radius: 8px;
+    height: fit-content;
+    margin: 0px 4.6%;
+    border-top: 2px solid rgb(122, 122, 122);
+    border-bottom: 2px solid rgb(122, 122, 122);
 }
 
 @media screen and (max-width: 768px)
@@ -1863,11 +1868,10 @@ a:hover{
 
 #cards .col-lg-4.col-md-4.col-sm-12 img
 {
-   
-    height: 50%;
+    height: 90%;
     border: none;
     border-radius: 8px;
-    margin: 10% 0 0% 25%;
+    margin: 5%;
 }
 
 #cards.two{
@@ -1893,7 +1897,7 @@ a:hover{
 
 #cards .col-lg-4.col-md-4.col-sm-12 h2
 {
-    color: #ffffff;
+    color: black;
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -1904,10 +1908,11 @@ a:hover{
 #cards .col-lg-4.col-md-4.col-sm-12 p
 {
     text-align: center;
-    color: white;
+    color: black;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.75px;
+    margin-bottom: 5%;
 }
 
 @media screen and (min-width: 768px)
@@ -3171,4 +3176,8 @@ footer
 .Center-content
 {
     margin-top: 60px;
+}
+
+.Center {
+    color: #000;
 }
